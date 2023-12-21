@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+	<head>
+		<title>7 GRZECHÓW GŁÓWNYCH</title>
+		<meta charset="UTF-8">
+		<link rel="Shortcut icon" href="img/krzyż.png"/>
+		<link rel=stylesheet type=text/css href=style.css>
+	</head>
+
+	<body style="text-align: center; color: white; font-family: Comic Sans MS;">
+		<form action="mailto:szczepan.krawczyk@tm1.edu.pl" method=POST>
+			<h2>Wypełnij formularz:</h2>
+	 	 		<label for=imie>imie: </label>
+					<input type="text" name="imie" id="imie" maxlength="6" size=69><br>
+				<label for=lat>wiek: </label>
+					<input type="number" name="lat" id="lat" min=15 max=100><br>
+			<h2>Płeć</h2>
+			<input type=radio name=plec id=loman value=loman>
+				<label for="loman">Kobieta</label><br>
+					<input type=radio name=plec id=chlop value=chlop>
+				<label for="chlop">Mężczyzna</label><br>
+			<h2>Kiedy ostatnio byłeś u spowiedzi?</h2>
+			<select name=kiedy id=kiedy>
+				<option value=tydzien>Tydzień temu</option>
+				<option value=dzis selected>byłem/am dziś :)</option>
+				<option value=miesiac>miesiąc temu</option>
+				<option value=nie>nie byłem/am :(</option>
+			</select>
+			<h2>Jakie grzechy ostatnio popełniłeś/łaś?</h2>
+			<textarea id=uwagi name=GRZECHY maxlength=50 cols=20 rows=10>Odpowiedź wpisz tutaj :)</textarea><br>
+		<input type=reset value="WYCZYŚĆ">
+		<input type=submit value="PRZEŚLIJ">
+
+	</form>
+	<h2 style="text-align: left">Wyniki</h2>
+	<table>
+		<tr>
+			<td>Opcja</td>
+			<td>Ocena</td>
+		</tr>
+		<tr>
+			<td>Tydzień temu</td>
+			<td>4</td>
+		</tr>
+		<tr>
+			<td>Dziś</td>
+			<td>6</td>
+		</tr>
+		<tr>
+			<td>Miesiąc temu</td>
+			<td>2</td>
+		</tr>
+		<tr>
+			<td>Nie byłem/am</td>
+			<td>1</td>
+		</tr>
+	</table>
+</body>
+</html>
